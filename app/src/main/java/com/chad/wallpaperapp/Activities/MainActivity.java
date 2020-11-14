@@ -1,18 +1,20 @@
 package com.chad.wallpaperapp.Activities;
 
 import android.os.Bundle;
+import android.widget.AbsListView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.chad.wallpaperapp.Adapter.WallpaperAdapter;
+import com.chad.wallpaperapp.Constants.Constants;
 import com.chad.wallpaperapp.Model.Wallpaper;
 import com.chad.wallpaperapp.R;
 
@@ -29,12 +31,20 @@ public class MainActivity extends AppCompatActivity {
 
     private WallpaperAdapter wallpaperAdapter;
     private List<Wallpaper> list;
+    private int pageNumber = 1;
+
+    private Boolean isScrolling = false;
+
+    int currentItems;
+    int totalItems;
+    int scrollOutItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setBarColors();
         initialize();
         fetchWallpaper();
     }
@@ -48,13 +58,38 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView.setAdapter(wallpaperAdapter);
         recyclerView.setLayoutManager(gridLayoutManager);
+
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+
+                if (newState == AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL) {
+                    isScrolling = true;
+                }
+            }
+
+            @Override
+            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+
+                currentItems = gridLayoutManager.getChildCount();
+                totalItems = gridLayoutManager.getItemCount();
+                scrollOutItems = gridLayoutManager.findFirstVisibleItemPosition();
+
+                if (isScrolling && (currentItems + scrollOutItems == totalItems)) {
+                    isScrolling = false;
+                    fetchWallpaper();
+                }
+            }
+        });
     }
 
     public void fetchWallpaper() {
 
         StringRequest request = new StringRequest(
                 Request.Method.GET,
-                "https://api.pexels.com/v1/curated/?page=1&per_page=80",
+                "https://api.pexels.com/v1/curated/?page="+pageNumber+"&per_page=80",
                 response -> {
 
                     try {
@@ -79,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                         wallpaperAdapter.notifyDataSetChanged();
+                        pageNumber++;
 
                     } catch (JSONException e) {
                         Toast.makeText(this, "JSON Error: " + e, Toast.LENGTH_SHORT).show();
@@ -90,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
             public Map<String, String> getHeaders() {
 
                 Map<String, String> params = new HashMap<>();
-                params.put("Authorization", "563492ad6f917000010000016ba5c7498c7a4751bca860431dbdc02f");
+                params.put("Authorization", Constants.API_KEY);
 
                 return params;
             }
@@ -99,5 +135,11 @@ public class MainActivity extends AppCompatActivity {
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         requestQueue.add(request);
     }
+
+    private void setBarColors() {
+        getWindow().setStatusBarColor(getResources().getColor(R.color.colorPrimary));
+        getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimary));
+    }
+
 
 }

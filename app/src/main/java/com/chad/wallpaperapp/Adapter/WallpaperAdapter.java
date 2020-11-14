@@ -1,6 +1,7 @@
 package com.chad.wallpaperapp.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.chad.wallpaperapp.Activities.FullWallpaperActivity;
+import com.chad.wallpaperapp.Constants.Constants;
 import com.chad.wallpaperapp.Model.Wallpaper;
 import com.chad.wallpaperapp.R;
 
@@ -35,6 +38,11 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperAdapter.View
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Glide.with(context).load(list.get(position).getMediumUrl()).into(holder.wallpaperImage);
+        holder.wallpaperImage.setOnClickListener(v -> {
+            Intent intent = new Intent(context, FullWallpaperActivity.class);
+            intent.putExtra(Constants.ORIGINAL_URL, list.get(position).getOriginalUrl());
+            context.startActivity(intent);
+        });
     }
 
     @Override
