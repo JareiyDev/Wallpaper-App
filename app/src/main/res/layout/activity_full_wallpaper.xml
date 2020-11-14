@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorPrimary"
     tools:context=".Activities.FullWallpaperActivity">
 
@@ -10,5 +11,16 @@
         android:id="@+id/imageFullWallpaper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSetWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set_wallpaper"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        app:cornerRadius="40dp"
+        android:layout_margin="40dp"/>
 
 </RelativeLayout>
