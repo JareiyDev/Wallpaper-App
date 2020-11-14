@@ -1,7 +1,10 @@
 package com.chad.wallpaperapp.Activities;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.AbsListView;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -33,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
     private List<Wallpaper> list;
     private int pageNumber = 1;
 
+    ImageView imageSearch;
+    EditText inputSearch;
+
+    private String url = "https://api.pexels.com/v1/curated/?page="+pageNumber+"&per_page=80";
+
     private Boolean isScrolling = false;
 
     int currentItems;
@@ -47,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         setBarColors();
         initialize();
         fetchWallpaper();
+        searchWallpaper();
     }
 
     private void initialize() {
@@ -55,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         list = new ArrayList<>();
         wallpaperAdapter = new WallpaperAdapter(this, list);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
+        inputSearch = findViewById(R.id.inputSearch);
+        imageSearch = findViewById(R.id.imageSearch);
 
         recyclerView.setAdapter(wallpaperAdapter);
         recyclerView.setLayoutManager(gridLayoutManager);
@@ -89,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
         StringRequest request = new StringRequest(
                 Request.Method.GET,
-                "https://api.pexels.com/v1/curated/?page="+pageNumber+"&per_page=80",
+                url,
                 response -> {
 
                     try {
@@ -134,6 +145,15 @@ public class MainActivity extends AppCompatActivity {
 
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         requestQueue.add(request);
+    }
+
+    public void searchWallpaper() {
+        imageSearch.setOnClickListener(v -> {
+            String query = inputSearch.getText().toString().toLowerCase();
+            url = "https://api.pexels.com/v1/search/?page="+pageNumber+"&per_page=80&query="+query;
+            list.clear();
+            fetchWallpaper();
+        });
     }
 
     private void setBarColors() {

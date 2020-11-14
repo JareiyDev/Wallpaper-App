@@ -3,4 +3,5 @@
     <string name="wallpapers">Wallpapers</string>
     <string name="set_wallpaper">SET WALLPAPER</string>
     <string name="download_image">DOWNLOAD IMAGE</string>
+    <string name="search_images">Search Images</string>
 </resources>
