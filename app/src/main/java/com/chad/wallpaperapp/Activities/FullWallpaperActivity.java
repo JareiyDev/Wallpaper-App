@@ -1,13 +1,15 @@
 package com.chad.wallpaperapp.Activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.DownloadManager;
 import android.app.WallpaperManager;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.chad.wallpaperapp.Constants.Constants;
@@ -34,6 +36,23 @@ public class FullWallpaperActivity extends AppCompatActivity {
 
         PhotoView photoView = findViewById(R.id.imageFullWallpaper);
         MaterialButton buttonSetWallpaper = findViewById(R.id.buttonSetWallpaper);
+        MaterialButton buttonDownloadImage = findViewById(R.id.buttonDownloadWallpaper);
+
+        String originalUrl;
+
+        originalUrl = getIntent().getStringExtra(Constants.ORIGINAL_URL);
+        Glide.with(this).load(originalUrl).into(photoView);
+
+        buttonDownloadImage.setOnClickListener(v -> {
+            DownloadManager downloadManager = (DownloadManager)getSystemService(Context.DOWNLOAD_SERVICE);
+            Uri uri = Uri.parse(originalUrl);
+            DownloadManager.Request request = new DownloadManager.Request(uri);
+
+            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+            downloadManager.enqueue(request);
+
+            Toast.makeText(this, "Download started!", Toast.LENGTH_SHORT).show();
+        });
 
         buttonSetWallpaper.setOnClickListener(v -> {
             WallpaperManager wallpaperManager = WallpaperManager.getInstance(FullWallpaperActivity.this);
@@ -47,9 +66,6 @@ public class FullWallpaperActivity extends AppCompatActivity {
                 Toast.makeText(FullWallpaperActivity.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
             }
         });
-
-        String originalUrl = getIntent().getStringExtra(Constants.ORIGINAL_URL);
-        Glide.with(this).load(originalUrl).into(photoView);
     }
 
     private void setBarColors() {
