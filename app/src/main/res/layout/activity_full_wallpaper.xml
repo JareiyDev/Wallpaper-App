@@ -20,7 +20,7 @@
         android:layout_alignParentBottom="true">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonSetWallpaper"
+            android:id="@+id/buttonDownloadWallpaper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/download_image"
@@ -32,7 +32,7 @@
             app:cornerRadius="6dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonDownloadWallpaper"
+            android:id="@+id/buttonSetWallpaper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/set_wallpaper"

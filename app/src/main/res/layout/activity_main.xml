@@ -34,41 +34,41 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="4dp"
         android:background="@drawable/background_search"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
+        android:padding="5dp"
         android:layout_below="@id/layoutHeader">
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_search"
             app:tint="@color/colorWhite"/>
 
         <EditText
             android:id="@+id/inputSearch"
-            android:layout_width="320dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="35dp"
             android:layout_marginStart="12dp"
             android:background="@null"
             android:fontFamily="@font/ubuntu_regular"
-            android:hint="@string/search_images"
+            android:hint="@string/eg_nature"
             android:imeOptions="actionDone"
             android:importantForAutofill="no"
             android:includeFontPadding="false"
             android:inputType="text"
             android:textColor="@color/colorWhite"
-            android:textColorHint="@color/colorWhite"
+            android:textColorHint="#8C8C8C"
             android:textSize="13sp" />
 
         <ImageView
             android:id="@+id/imageSearch"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_check"
             android:background="?selectableItemBackground"

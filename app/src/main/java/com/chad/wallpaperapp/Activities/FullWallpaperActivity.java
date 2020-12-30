@@ -27,7 +27,7 @@ public class FullWallpaperActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_wallpaper);
 
-        Objects.requireNonNull(getSupportActionBar()).hide();
+       // Objects.requireNonNull(getSupportActionBar()).hide();
         setBarColors();
         initialize();
     }
@@ -53,7 +53,6 @@ public class FullWallpaperActivity extends AppCompatActivity {
 
             Toast.makeText(this, "Download started!", Toast.LENGTH_SHORT).show();
         });
-
         buttonSetWallpaper.setOnClickListener(v -> {
             WallpaperManager wallpaperManager = WallpaperManager.getInstance(FullWallpaperActivity.this);
 
@@ -66,6 +65,7 @@ public class FullWallpaperActivity extends AppCompatActivity {
                 Toast.makeText(FullWallpaperActivity.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 
     private void setBarColors() {

@@ -157,9 +157,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setBarColors() {
-        getWindow().setStatusBarColor(getResources().getColor(R.color.colorPrimary));
+        getWindow().setStatusBarColor(getResources().getColor(R.color.colorPrimaryDark));
         getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimary));
     }
-
 
 }
