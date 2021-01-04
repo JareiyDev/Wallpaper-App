@@ -4,6 +4,7 @@ Writing a Wallpaper App App using [Pexels API](https://www.pexels.com/search/Api
 
 ## Screenshots
 
+![onboarding3](https://user-images.githubusercontent.com/63049827/103525899-0a011680-4e91-11eb-99ed-c647f5701732.png)
 
 ## Dependencies
   * [Material Design](https://material.io/design) - Material is an adaptable system of guidelines, components, and tools that support the best practices of user interface design
