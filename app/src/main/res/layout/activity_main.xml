@@ -22,7 +22,7 @@
             android:text="@string/wallpapers"
             android:fontFamily="@font/ubuntu_bold"
             android:includeFontPadding="false"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorBlack"
             android:textSize="22sp"/>
 
     </LinearLayout>
@@ -46,7 +46,7 @@
             android:layout_height="24dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_search"
-            app:tint="@color/colorWhite"/>
+            app:tint="@color/colorBlack"/>
 
         <EditText
             android:id="@+id/inputSearch"
@@ -61,7 +61,7 @@
             android:importantForAutofill="no"
             android:includeFontPadding="false"
             android:inputType="text"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorBlack"
             android:textColorHint="#8C8C8C"
             android:textSize="13sp" />
 
@@ -72,7 +72,7 @@
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_check"
             android:background="?selectableItemBackground"
-            app:tint="@color/colorWhite"/>
+            app:tint="@color/colorBlack"/>
 
     </LinearLayout>
 
@@ -81,6 +81,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
+        android:layout_marginBottom="?attr/actionBarSize"
         android:layout_below="@id/layoutSearch"/>
-
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:adUnitId="@string/ad_Unit_Id">
+    </com.google.android.gms.ads.AdView>
 </RelativeLayout>

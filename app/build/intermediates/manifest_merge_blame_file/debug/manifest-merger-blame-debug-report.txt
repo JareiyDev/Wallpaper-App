@@ -1,0 +1,505 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.phbet.wallpaper"
+4    android:versionCode="2"
+5    android:versionName="2.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:5:5-79
+11-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+12-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:6:5-72
+12-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:6:22-69
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:7:5-67
+13-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="com.google.android.gms.permission.AD_ID" /> <!-- Android package visibility setting -->
+14-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:26:5-79
+14-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:26:22-76
+15    <queries>
+15-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:29:5-45:15
+16
+17        <!-- For browser content -->
+18        <intent>
+18-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:32:9-38:18
+19            <action android:name="android.intent.action.VIEW" />
+19-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:40:17-69
+19-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:40:25-66
+20
+21            <category android:name="android.intent.category.BROWSABLE" />
+21-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:43:17-78
+21-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:43:27-75
+22
+23            <data android:scheme="https" />
+23-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:45:17-47:50
+23-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:47:21-47
+24        </intent>
+25        <!-- End of browser content -->
+26        <!-- For CustomTabsService -->
+27        <intent>
+27-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:32:9-38:18
+28            <action android:name="android.support.customtabs.action.CustomTabsService" />
+29        </intent>
+30        <!-- End of CustomTabsService -->
+31    </queries>
+32
+33    <uses-permission android:name="android.permission.WAKE_LOCK" />
+33-->[com.google.android.gms:play-services-measurement-sdk-api:20.1.2] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\4eb30ac03549588841a2f40c662f448d\jetified-play-services-measurement-sdk-api-20.1.2\AndroidManifest.xml:25:5-68
+33-->[com.google.android.gms:play-services-measurement-sdk-api:20.1.2] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\4eb30ac03549588841a2f40c662f448d\jetified-play-services-measurement-sdk-api-20.1.2\AndroidManifest.xml:25:22-65
+34    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+34-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:27:5-81
+34-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:27:22-78
+35    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+35-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:28:5-77
+35-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:28:22-74
+36    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+36-->[com.android.installreferrer:installreferrer:1.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\7e1617743977d417c750024148bd00fc\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
+36-->[com.android.installreferrer:installreferrer:1.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\7e1617743977d417c750024148bd00fc\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
+37
+38    <application
+38-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:9:5-45:19
+39        android:allowBackup="true"
+39-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:10:9-35
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.6.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\72e1e6f4fc602f2fdf8a10e703705465\core-1.6.0\AndroidManifest.xml:24:18-86
+41        android:debuggable="true"
+42        android:icon="@drawable/logo"
+42-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:11:9-38
+43        android:label="@string/app_name"
+43-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:12:9-41
+44        android:networkSecurityConfig="@xml/network_security_config"
+44-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:13:9-69
+45        android:supportsRtl="true"
+45-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:14:9-35
+46        android:testOnly="true"
+47        android:theme="@style/AppTheme" >
+47-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:15:9-40
+48        <meta-data
+48-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:16:9-107
+49            android:name="com.facebook.sdk.ApplicationId"
+49-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:16:20-65
+50            android:value="@string/facebook_app_id" />
+50-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:16:66-105
+51        <meta-data
+51-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:17:9-19:69
+52            android:name="com.google.android.gms.ads.APPLICATION_ID"
+52-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:18:13-69
+53            android:value="ca-app-pub-5768394121939949~3529202692" />
+53-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:19:13-67
+54
+55        <activity
+55-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:20:9-22:40
+56            android:name="com.phbet.wallpaper.InfoActivity"
+56-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:21:13-41
+57            android:exported="false" />
+57-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:22:13-37
+58        <activity
+58-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:23:9-25:40
+59            android:name="com.phbet.wallpaper.VoteActivity"
+59-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:24:13-41
+60            android:exported="false" />
+60-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:25:13-37
+61        <activity
+61-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:26:9-28:40
+62            android:name="com.phbet.wallpaper.Activities.HomeActivity"
+62-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:27:13-52
+63            android:exported="false" />
+63-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:28:13-37
+64        <activity
+64-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:29:9-37:20
+65            android:name="com.phbet.wallpaper.Activities.SplashActivity"
+65-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:30:13-54
+66            android:exported="true" >
+66-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:31:13-36
+67            <intent-filter>
+67-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:32:13-36:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:33:17-69
+68-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:33:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:35:17-77
+70-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:35:27-74
+71            </intent-filter>
+72        </activity>
+73        <activity android:name="com.phbet.wallpaper.Activities.FullWallpaperActivity" />
+73-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:38:9-70
+73-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:38:19-67
+74        <activity
+74-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:39:9-41:48
+75            android:name="com.phbet.wallpaper.Activities.MainActivity"
+75-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:40:13-52
+76            android:exported="true" />
+76-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:41:13-36
+77        <activity
+77-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:42:9-44:40
+78            android:name="com.phbet.wallpaper.WebviewActivity"
+78-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:43:13-44
+79            android:exported="false" />
+79-->D:\Freelancer\Wallpaper-App\app\src\main\AndroidManifest.xml:44:13-37
+80        <activity
+80-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:30:9-33:66
+81            android:name="com.facebook.FacebookActivity"
+81-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:31:13-57
+82            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+82-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:32:13-96
+83            android:theme="@style/com_facebook_activity_theme" />
+83-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:33:13-63
+84        <activity android:name="com.facebook.CustomTabMainActivity" />
+84-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:34:9-71
+84-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:34:19-68
+85        <activity
+85-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:35:9-49:20
+86            android:name="com.facebook.CustomTabActivity"
+86-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:36:13-58
+87            android:exported="true" >
+87-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:37:13-36
+88            <intent-filter>
+88-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:39:13-48:29
+89                <action android:name="android.intent.action.VIEW" />
+89-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:40:17-69
+89-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:40:25-66
+90
+91                <category android:name="android.intent.category.DEFAULT" />
+91-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:42:17-76
+91-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:42:27-73
+92                <category android:name="android.intent.category.BROWSABLE" />
+92-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:43:17-78
+92-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:43:27-75
+93
+94                <data
+94-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:45:17-47:50
+95                    android:host="cct.com.phbet.wallpaper"
+95-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:46:21-56
+96                    android:scheme="fbconnect" />
+96-->[com.facebook.android:facebook-common:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\c8087fc55f1b3a64d41c76fb7891008a\jetified-facebook-common-8.2.0\AndroidManifest.xml:47:21-47
+97            </intent-filter>
+98        </activity>
+99
+100        <service
+100-->[com.google.firebase:firebase-database:20.0.5] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\e3ea4eafe774ff0b2f0b79786b9c0373\jetified-firebase-database-20.0.5\AndroidManifest.xml:29:9-35:19
+101            android:name="com.google.firebase.components.ComponentDiscoveryService"
+101-->[com.google.firebase:firebase-database:20.0.5] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\e3ea4eafe774ff0b2f0b79786b9c0373\jetified-firebase-database-20.0.5\AndroidManifest.xml:30:13-84
+102            android:directBootAware="true"
+102-->[com.google.firebase:firebase-common:20.1.1] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\9c12b2f172b494dd8ad2472e44d26b66\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+103            android:exported="false" >
+103-->[com.google.firebase:firebase-database:20.0.5] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\e3ea4eafe774ff0b2f0b79786b9c0373\jetified-firebase-database-20.0.5\AndroidManifest.xml:31:13-37
+104            <meta-data
+104-->[com.google.firebase:firebase-database:20.0.5] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\e3ea4eafe774ff0b2f0b79786b9c0373\jetified-firebase-database-20.0.5\AndroidManifest.xml:32:13-34:85
+105                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+105-->[com.google.firebase:firebase-database:20.0.5] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\e3ea4eafe774ff0b2f0b79786b9c0373\jetified-firebase-database-20.0.5\AndroidManifest.xml:33:17-109
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-database:20.0.5] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\e3ea4eafe774ff0b2f0b79786b9c0373\jetified-firebase-database-20.0.5\AndroidManifest.xml:34:17-82
+107        </service>
+108
+109        <provider
+109-->[com.google.firebase:firebase-common:20.1.1] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\9c12b2f172b494dd8ad2472e44d26b66\jetified-firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
+110            android:name="com.google.firebase.provider.FirebaseInitProvider"
+110-->[com.google.firebase:firebase-common:20.1.1] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\9c12b2f172b494dd8ad2472e44d26b66\jetified-firebase-common-20.1.1\AndroidManifest.xml:27:13-77
+111            android:authorities="com.phbet.wallpaper.firebaseinitprovider"
+111-->[com.google.firebase:firebase-common:20.1.1] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\9c12b2f172b494dd8ad2472e44d26b66\jetified-firebase-common-20.1.1\AndroidManifest.xml:28:13-72
+112            android:directBootAware="true"
+112-->[com.google.firebase:firebase-common:20.1.1] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\9c12b2f172b494dd8ad2472e44d26b66\jetified-firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+113            android:exported="false"
+113-->[com.google.firebase:firebase-common:20.1.1] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\9c12b2f172b494dd8ad2472e44d26b66\jetified-firebase-common-20.1.1\AndroidManifest.xml:30:13-37
+114            android:initOrder="100" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+114-->[com.google.firebase:firebase-common:20.1.1] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\9c12b2f172b494dd8ad2472e44d26b66\jetified-firebase-common-20.1.1\AndroidManifest.xml:31:13-36
+115        <activity
+115-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:50:9-55:43
+116            android:name="com.google.android.gms.ads.AdActivity"
+116-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:51:13-65
+117            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+117-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:52:13-122
+118            android:exported="false"
+118-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:53:13-37
+119            android:theme="@android:style/Theme.Translucent" />
+119-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:54:13-61
+120
+121        <provider
+121-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:57:9-62:43
+122            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+122-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:58:13-76
+123            android:authorities="com.phbet.wallpaper.mobileadsinitprovider"
+123-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:59:13-73
+124            android:exported="false"
+124-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:60:13-37
+125            android:initOrder="100" />
+125-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:61:13-36
+126
+127        <service
+127-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:64:9-68:43
+128            android:name="com.google.android.gms.ads.AdService"
+128-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:65:13-64
+129            android:enabled="true"
+129-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:66:13-35
+130            android:exported="false" />
+130-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:67:13-37
+131
+132        <activity
+132-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:70:9-74:43
+133            android:name="com.google.android.gms.ads.OutOfContextTestingActivity"
+133-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:71:13-82
+134            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+134-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:72:13-122
+135            android:exported="false" />
+135-->[com.google.android.gms:play-services-ads-lite:21.4.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\28d726ab50049f241d5e96dd393fe491\jetified-play-services-ads-lite-21.4.0\AndroidManifest.xml:73:13-37
+136        <activity
+136-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\3571199167c011e3d01cd7f9273a2aab\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+137            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+137-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\3571199167c011e3d01cd7f9273a2aab\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+138            android:exported="false"
+138-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\3571199167c011e3d01cd7f9273a2aab\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+139            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+139-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\3571199167c011e3d01cd7f9273a2aab\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+140
+141        <meta-data
+141-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\d0a968e5f7efd732245bfc8c7d7c12c1\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+142            android:name="com.google.android.gms.version"
+142-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\d0a968e5f7efd732245bfc8c7d7c12c1\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+143            android:value="@integer/google_play_services_version" />
+143-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\d0a968e5f7efd732245bfc8c7d7c12c1\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+144        <!--
+145         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+146         with the application context. This config is merged in with the host app's manifest,
+147         but there can only be one provider with the same authority activated at any given
+148         point; so if the end user has two or more different apps that use Facebook SDK, only the
+149         first one will be able to use the provider. To work around this problem, we use the
+150         following placeholder in the authority to identify each host application as if it was
+151         a completely different provider.
+152        -->
+153        <provider
+153-->[com.facebook.android:facebook-core:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\58a62671a8e49203a4a519cbdaea5f91\jetified-facebook-core-8.2.0\AndroidManifest.xml:39:9-42:40
+154            android:name="com.facebook.internal.FacebookInitProvider"
+154-->[com.facebook.android:facebook-core:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\58a62671a8e49203a4a519cbdaea5f91\jetified-facebook-core-8.2.0\AndroidManifest.xml:40:13-70
+155            android:authorities="com.phbet.wallpaper.FacebookInitProvider"
+155-->[com.facebook.android:facebook-core:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\58a62671a8e49203a4a519cbdaea5f91\jetified-facebook-core-8.2.0\AndroidManifest.xml:41:13-72
+156            android:exported="false" />
+156-->[com.facebook.android:facebook-core:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\58a62671a8e49203a4a519cbdaea5f91\jetified-facebook-core-8.2.0\AndroidManifest.xml:42:13-37
+157
+158        <receiver
+158-->[com.facebook.android:facebook-core:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\58a62671a8e49203a4a519cbdaea5f91\jetified-facebook-core-8.2.0\AndroidManifest.xml:44:9-50:20
+159            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+159-->[com.facebook.android:facebook-core:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\58a62671a8e49203a4a519cbdaea5f91\jetified-facebook-core-8.2.0\AndroidManifest.xml:45:13-86
+160            android:exported="false" >
+160-->[com.facebook.android:facebook-core:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\58a62671a8e49203a4a519cbdaea5f91\jetified-facebook-core-8.2.0\AndroidManifest.xml:46:13-37
+161            <intent-filter>
+161-->[com.facebook.android:facebook-core:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\58a62671a8e49203a4a519cbdaea5f91\jetified-facebook-core-8.2.0\AndroidManifest.xml:47:13-49:29
+162                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+162-->[com.facebook.android:facebook-core:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\58a62671a8e49203a4a519cbdaea5f91\jetified-facebook-core-8.2.0\AndroidManifest.xml:48:17-95
+162-->[com.facebook.android:facebook-core:8.2.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\58a62671a8e49203a4a519cbdaea5f91\jetified-facebook-core-8.2.0\AndroidManifest.xml:48:25-92
+163            </intent-filter>
+164        </receiver>
+165
+166        <provider
+166-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:31:9-39:20
+167            android:name="androidx.startup.InitializationProvider"
+167-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:32:13-67
+168            android:authorities="com.phbet.wallpaper.androidx-startup"
+168-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:33:13-68
+169            android:exported="false" >
+169-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:34:13-37
+170            <meta-data
+170-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:36:13-38:52
+171                android:name="androidx.work.WorkManagerInitializer"
+171-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:37:17-68
+172                android:value="androidx.startup" />
+172-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:38:17-49
+173        </provider>
+174
+175        <service
+175-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:41:9-46:35
+176            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+176-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:42:13-88
+177            android:directBootAware="false"
+177-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:43:13-44
+178            android:enabled="@bool/enable_system_alarm_service_default"
+178-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:44:13-72
+179            android:exported="false" />
+179-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:45:13-37
+180        <service
+180-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:47:9-53:35
+181            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+181-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:48:13-84
+182            android:directBootAware="false"
+182-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:49:13-44
+183            android:enabled="@bool/enable_system_job_service_default"
+183-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:50:13-70
+184            android:exported="true"
+184-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:51:13-36
+185            android:permission="android.permission.BIND_JOB_SERVICE" />
+185-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:52:13-69
+186        <service
+186-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:54:9-59:35
+187            android:name="androidx.work.impl.foreground.SystemForegroundService"
+187-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:55:13-81
+188            android:directBootAware="false"
+188-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:56:13-44
+189            android:enabled="@bool/enable_system_foreground_service_default"
+189-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:57:13-77
+190            android:exported="false" />
+190-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:58:13-37
+191
+192        <receiver
+192-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:61:9-66:35
+193            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+193-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:62:13-88
+194            android:directBootAware="false"
+194-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:63:13-44
+195            android:enabled="true"
+195-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:64:13-35
+196            android:exported="false" />
+196-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:65:13-37
+197        <receiver
+197-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:67:9-77:20
+198            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+198-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:68:13-106
+199            android:directBootAware="false"
+199-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:69:13-44
+200            android:enabled="false"
+200-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:70:13-36
+201            android:exported="false" >
+201-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:71:13-37
+202            <intent-filter>
+202-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:73:13-76:29
+203                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+203-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:74:17-87
+203-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:74:25-84
+204                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+204-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:75:17-90
+204-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:75:25-87
+205            </intent-filter>
+206        </receiver>
+207        <receiver
+207-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:78:9-88:20
+208            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+208-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:79:13-104
+209            android:directBootAware="false"
+209-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:80:13-44
+210            android:enabled="false"
+210-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:81:13-36
+211            android:exported="false" >
+211-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:82:13-37
+212            <intent-filter>
+212-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:84:13-87:29
+213                <action android:name="android.intent.action.BATTERY_OKAY" />
+213-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:85:17-77
+213-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:85:25-74
+214                <action android:name="android.intent.action.BATTERY_LOW" />
+214-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:86:17-76
+214-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:86:25-73
+215            </intent-filter>
+216        </receiver>
+217        <receiver
+217-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:89:9-99:20
+218            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+218-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:90:13-104
+219            android:directBootAware="false"
+219-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:91:13-44
+220            android:enabled="false"
+220-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:92:13-36
+221            android:exported="false" >
+221-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:93:13-37
+222            <intent-filter>
+222-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:95:13-98:29
+223                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+223-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:96:17-83
+223-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:96:25-80
+224                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+224-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:97:17-82
+224-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:97:25-79
+225            </intent-filter>
+226        </receiver>
+227        <receiver
+227-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:100:9-109:20
+228            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+228-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:101:13-103
+229            android:directBootAware="false"
+229-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:102:13-44
+230            android:enabled="false"
+230-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:103:13-36
+231            android:exported="false" >
+231-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:104:13-37
+232            <intent-filter>
+232-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:106:13-108:29
+233                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+233-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:107:17-79
+233-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:107:25-76
+234            </intent-filter>
+235        </receiver>
+236        <receiver
+236-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:110:9-121:20
+237            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+237-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:111:13-88
+238            android:directBootAware="false"
+238-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:112:13-44
+239            android:enabled="false"
+239-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:113:13-36
+240            android:exported="false" >
+240-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:114:13-37
+241            <intent-filter>
+241-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:116:13-120:29
+242                <action android:name="android.intent.action.BOOT_COMPLETED" />
+242-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:117:17-79
+242-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:117:25-76
+243                <action android:name="android.intent.action.TIME_SET" />
+243-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:118:17-73
+243-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:118:25-70
+244                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+244-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:119:17-81
+244-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:119:25-78
+245            </intent-filter>
+246        </receiver>
+247        <receiver
+247-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:122:9-131:20
+248            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+248-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:123:13-99
+249            android:directBootAware="false"
+249-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:124:13-44
+250            android:enabled="@bool/enable_system_alarm_service_default"
+250-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:125:13-72
+251            android:exported="false" >
+251-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:126:13-37
+252            <intent-filter>
+252-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:128:13-130:29
+253                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+253-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:129:17-98
+253-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:129:25-95
+254            </intent-filter>
+255        </receiver>
+256        <receiver
+256-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:132:9-142:20
+257            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+257-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:133:13-78
+258            android:directBootAware="false"
+258-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:134:13-44
+259            android:enabled="true"
+259-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:135:13-35
+260            android:exported="true"
+260-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:136:13-36
+261            android:permission="android.permission.DUMP" >
+261-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:137:13-57
+262            <intent-filter>
+262-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:139:13-141:29
+263                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+263-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:140:17-88
+263-->[androidx.work:work-runtime:2.7.0] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\5a39f6223c8aeabac5e98e1e0883dfa6\work-runtime-2.7.0\AndroidManifest.xml:140:25-85
+264            </intent-filter>
+265        </receiver>
+266
+267        <service
+267-->[androidx.room:room-runtime:2.2.5] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\3aac0d71d09181a8c3c0abfbff95bbf8\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+268            android:name="androidx.room.MultiInstanceInvalidationService"
+268-->[androidx.room:room-runtime:2.2.5] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\3aac0d71d09181a8c3c0abfbff95bbf8\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+269            android:directBootAware="true"
+269-->[androidx.room:room-runtime:2.2.5] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\3aac0d71d09181a8c3c0abfbff95bbf8\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+270            android:exported="false" />
+270-->[androidx.room:room-runtime:2.2.5] C:\Users\thang\.gradle\caches\transforms-2\files-2.1\3aac0d71d09181a8c3c0abfbff95bbf8\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+271    </application>
+272
+273</manifest>

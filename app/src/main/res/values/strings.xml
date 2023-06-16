@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">Wallpaper App</string>
-    <string name="wallpapers">Wallpapers</string>
+    <string name="app_name">PHBet-Wallpaper</string>
+    <string name="wallpapers">PHBet-Wallpaper</string>
     <string name="set_wallpaper">SET WALLPAPER</string>
     <string name="download_image">DOWNLOAD IMAGE</string>
     <string name="search_images">Search Images</string>
     <string name="eg_nature">eg. Nature</string>
+
+    <string name="ad_Unit_Id">ca-app-pub-5768394121939949/8314625515</string>
+    <string name="facebook_app_id">181118968262416</string>
 </resources>

@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 33
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.chad.wallpaperapp"
+        applicationId "com.phbet.wallpaper"
         minSdkVersion 21
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 33
+        versionCode 3
+        versionName "3.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -55,4 +55,9 @@ dependencies {
     //Rounded ImageView
     implementation 'com.makeramen:roundedimageview:2.3.0'
 
+    implementation 'com.google.firebase:firebase-database:20.0.0'
+    implementation platform('com.google.firebase:firebase-bom:30.0.0')
+    implementation 'com.google.android.gms:play-services-ads:21.4.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[8,9)'
 }
+apply plugin: 'com.google.gms.google-services'
